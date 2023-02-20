@@ -21,6 +21,7 @@ const VideoDetails = () => {
     document.getElementById("root").classList.add("custom-h");
     fetchVideoDetails();
     fetchRelatedVideos();
+    // eslint-disable-next-line
   }, [id])
 
   const fetchVideoDetails = () => {
@@ -65,6 +66,7 @@ const VideoDetails = () => {
                                     <img
                                         className="h-full w-full object-cover"
                                         src={video?.author?.avatar[0]?.url}
+                                        alt={video?.title}
                                     />
                                 </div>
                             </div>
